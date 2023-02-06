@@ -35,19 +35,14 @@ ul{
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
+
     padding: 0 30px;
     opacity: 1;
-    scroll-snap-align: start;
 }
 .hidden{
     display: none !important;
 }
 .main-content{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 100vh;
     padding-left: 270px;
 }
 .padd-15{
@@ -59,7 +54,6 @@ ul{
     width: 100%;
     
     margin: auto;
-
 }
 .section .container{
     padding-top: 60px;
@@ -122,6 +116,7 @@ ul{
 }
 /* aside */
 .aside{
+    
 width: 270px;
 background: var(--bg-black-100);
 position: fixed;
@@ -159,7 +154,7 @@ z-index: 10;
     font-size: 40px;
 }
 
-.aside .logo a::before{
+/* .aside .logo a::before{
     content: '';
     position: absolute;
     width: 20px;
@@ -178,7 +173,7 @@ z-index: 10;
     border-right: 5px solid var(--skin-color);
     top: 0;
     right: 0;
-}
+} */
 .aside .nav-toggler{
     height: 40px;
     width: 45px;
@@ -279,18 +274,6 @@ h3.my-profession{
 }
 .typing{
     color: var(--skin-color);
-    background: linear-gradient(to right, rgb(67, 124, 205), rgb(0, 238, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: fade 2s ease-in-out 2ms;
-}
-@keyframes fade{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
 }
 .home-info p{
     margin-bottom: 70px;
@@ -610,4 +593,9 @@ h3.my-profession{
 }
 html{
     scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+}
+
+.bpnkt:link{
+    color: #000000;
 }
